@@ -1,0 +1,16 @@
+.pytest_cache
+.mypy_cache
+.vscode
+__pycache__
+outputs
+data
+processors
+.DS_Store
+.ipynb_checkpoints
+*-workspace
+.tox
+wandb
+multirun
+customer-segmentation-a-AULLE--py3.8
+*.log
+venv

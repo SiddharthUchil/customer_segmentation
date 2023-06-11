@@ -1,0 +1,45 @@
+hydra:  
+  output_subdir: null  
+  run:  
+    dir: .
+    
+raw_data: 
+  path: data/raw/marketing_campaign.csv
+
+intermediate:
+  dir: data/intermediate
+  name: processed.csv
+  path: ${intermediate.dir}/${intermediate.name}
+
+final:
+  dir: data/final
+  name: pca.csv
+  path: ${final.dir}/${final.name}
+
+flow: all
+
+columns:
+  keep:
+    - Income
+    - Recency
+    - NumWebVisitsMonth
+    - Complain
+    - age
+    - total_purchases
+    - enrollment_years
+    - family_size
+
+  remove_outliers_threshold:
+    age: 90
+    Income: 600000
+
+encode:
+  family_size:
+    Married: 2
+    Together: 2
+    Absurd: 1
+    Widow: 1
+    YOLO: 1
+    Divorced: 1
+    Single: 1
+    Alone: 1

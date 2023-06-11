@@ -1,0 +1,5 @@
+outs:
+- md5: 2f9db0b44e651543ef416e3dca47ccc5.dir
+  size: 2042
+  nfiles: 2
+  path: processors
