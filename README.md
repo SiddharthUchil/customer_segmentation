@@ -1,9 +1,5 @@
 # End-to-end Customer Segmentation Project
 
-## About
-
-This project is the demo of the article [BentoML: Create an ML Powered Prediction Service in Minutes](https://towardsdatascience.com/bentoml-create-an-ml-powered-prediction-service-in-minutes-23d135d6ca76?gi=4dfb07bbfa7b).
-
 ## Project Structure
 
 - `src`: consists of Python scripts
